@@ -1,3 +1,7 @@
+$(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+});
+
 anime({
     targets: ".bg0, .bg2, .bg3, .bg4, .bg5",
     translateY: [50, 0],
