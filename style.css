@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
+@font-face {
+  font-family: pixelfont;
+  src: url(04B_30__.TTF);
+}
 :root {
   --skyblue: #aaf3ff;
+  --mdb-purple: #8E24AA;
   --duration: 1.5s;
   --container-size: 250px;
   --box-size: 33px;
   --box-border-radius: 15%;
+  --font-family-roboto: "Pixelify Sans", cursive;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -45,7 +51,9 @@ body {
   padding: 0;
   background: #0d434f;
   height: 500px;
-  cursor: url("http://www.rw-designer.com/cursor-extern.php?id=181637"), auto;
+  cursor: url("normal.cur"), auto;
+  font-family: "Pixelify Sans", cursive !important;
+  overflow-y: hidden;
 }
 
 .panel {
@@ -61,15 +69,17 @@ body {
 }
 
 .ml15 {
-  font-weight: 800;
-  font-size: 3.8em;
+  font-weight: 400;
+  font-size: 5em;
   text-transform: uppercase;
   letter-spacing: 0.5em;
+  font-family: "pixelfont";
 }
 
 .ml15 .word {
   display: inline-block;
   line-height: 1em;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.51);
 }
 
 .container-fluid .bg {
@@ -130,6 +140,96 @@ body {
   top: 0;
   background: url("png/bg5.png");
   background-size: cover;
+}
+
+.particlelamp {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("png/particlelight.svg");
+  background-size: cover;
+}
+
+.particlelamp2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("png/particlelight2.svg");
+  background-size: cover;
+}
+
+.sword {
+  position: absolute;
+}
+
+.dragon {
+  position: absolute;
+  left: 60rem;
+  bottom: 20rem;
+  transform: scale(0.6);
+}
+
+.particlemoney {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("png/particlemoney.svg");
+  background-size: cover;
+}
+
+.particlemoney2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("png/particlemoney2.svg");
+  background-size: cover;
+}
+
+.shadow-custom {
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25), 0 3px 0px 0px rgba(0, 0, 0, 0.58) !important;
+}
+
+.shadow-page {
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25), 0 3px 0px 1px rgba(0, 0, 0, 0.58) !important;
+}
+
+.button-color {
+  background: #8E24AA !important;
+}
+
+.gradient-boat {
+  /* fallback for old browsers */
+  background: #a18cd1;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to top, rgb(161, 140, 209), rgba(251, 194, 235, 0.5));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to top, rgb(161, 140, 209), rgba(251, 194, 235, 0.5));
+}
+
+.gradient-money {
+  /* fallback for old browsers */
+  background: #c1dfc4;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom, rgb(193, 223, 196), rgb(222, 236, 221));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom, rgb(193, 223, 196), rgb(222, 236, 221));
+}
+
+.gradient-dual {
+  /* fallback for old browsers */
+  background: #fa709a;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to left, rgba(250, 112, 154, 0.2), rgba(254, 225, 64, 0.2));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to left, rgba(250, 112, 154, 0.2), rgba(254, 225, 64, 0.2));
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css"/>
     <title>RAPUNZEL'S QUEST - Home</title>
     <!-- WEB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="webicon.svg" type="image/x-icon" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -21,10 +21,13 @@
     />
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- MDB Colors -->
+    <link rel="stylesheet" href="colors.css" />
   </head>
   <body>
     <!--START-->
     <div class="container-fluid">
+
       <div class="bg"></div>
       <div class="bg0"></div>
       <div class="bg2"></div>
@@ -37,12 +40,14 @@
           <span class="word">Quest</span>
         </h1>
         <a href="panel1.html" class="justify-content-center align-self-center">
-          <button class="btn btn-lg btn-warning btn-rounded button" href="panel1.html" id="start_button" type="button">Begin Adventure</button>
+          <button class="btn btn-lg btn-warning btn-rounded button shadow-custom" href="panel1.html" id="start_button" type="button">Begin Adventure</button>
         </a>
       </div>
-    </div>
-    <div class="loader-wrapper">
-      <span class="loader"><span class="loader-inner"></span></span>
+      <div class="text-white position-absolute bottom-0 end-0">
+        <span class="word">© 2023 - Hafizh, Clara, Lujain, Aysha - All Rights Reserved.</span>
+      </div>
+      <audio src="sound/maintheme.mp3" controls autoplay muted loop controlsList="nodownload" class="position-absolute bottom-0 start-0"></audio>
+      </div>
     </div>
     <!--END-->
 

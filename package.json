@@ -4,6 +4,7 @@
   "homepage": "https://mdbootstrap.com/docs/standard/",
   "license": "MIT",
   "dependencies": {
-    "animejs": "^3.2.1"
+    "animejs": "^3.2.1",
+    "mdb-ui-kit": "^6.4.2"
   }
 }
