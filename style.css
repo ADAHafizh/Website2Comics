@@ -50,10 +50,9 @@ body {
   margin: 0;
   padding: 0;
   background: #0d434f;
-  height: 500px;
+  height: 400px;
   cursor: url("normal.cur"), auto;
   font-family: "Pixelify Sans", cursive !important;
-  overflow-y: hidden;
 }
 
 .panel {
@@ -202,7 +201,7 @@ body {
 }
 
 .button-color {
-  background: #8E24AA !important;
+  background: #CE93D8 !important;
 }
 
 .gradient-boat {

@@ -8,6 +8,12 @@ function playMusic(){
     var music = new Audio('sound/pageturn.mp3');
     music.play();
 }
+
+//Delay Next Page
+function delay (URL) {
+    setTimeout( function() { window.location = URL }, 1000 );
+}
+
 //Animations
 anime({
     targets: ".bg0, .bg2, .bg3, .bg4, .bg5",
